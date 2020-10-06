@@ -1,0 +1,524 @@
+* {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-weight:400;
+}
+.container{ 
+    margin:0 auto;
+}
+
+.header__contacts {
+    height:44px;
+    background-color: #000000;
+    font-size:12px;
+    color:grey;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header__contacts-inner {
+    margin-left:200px;
+    display:flex;
+    text-align:center;
+    
+}
+.header__phone-img{
+    width:16px;
+    height:16px;
+    margin-right:15px;
+}
+.header__phone {
+    font-size:12px;
+    color:grey;
+    margin-right:30px;
+}
+.header__worktime{
+    display: flex;
+}
+.header__worktime p{
+    margin-right:30px;
+    justify-content: center;
+}
+.header__worktime p::before{
+    content:"";
+    display:inline-flex;
+    height:12px;
+    width:1px;
+    background:grey;
+    margin-left:-15px;
+    margin-right:15px;
+}
+.header__login-img{
+    margin-right:15px;
+}
+.header__login {
+    margin-right:410px;
+    display: flex;
+}
+.header__login-btn {
+    font-size:12px;
+    color:grey;
+}
+.header__login-btn:hover{
+    color:#ffffff;
+}
+.header__menu {
+    height:80px;
+    background-color: #0f0f0f;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo {
+    margin-left:200px;
+}
+.menu {
+    margin-right:370px;
+}
+.menu__list {
+    display: flex;
+}
+.menu__list-item {
+    margin-right:40px;
+}
+.menu__link {
+    text-transform: uppercase;
+    font-size:14px;
+    color:gray;
+}
+.menu__link:hover{
+    color:#ffffff;
+}
+.header__content {
+    height:810px;
+    background: url(../img/header.png);
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.header__content-inner {
+    height: 810px;
+    background-color: rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+}
+.header__content-title{
+    position:absolute;
+    margin-left:800px;
+    margin-top:160px;
+    width:320px;
+    height:320px;
+    border:4px solid #ffffff;
+    justify-content: center;
+}
+.header__content-logo{
+    margin-top:100px;
+    margin-left:65px;
+    margin-bottom:12px;
+}
+.header__title {
+    margin-left:65px;
+    font-size:22px;
+    font-weight:400;
+    color:#ffffff;
+}
+.header__title::before{
+    content:'';
+    display:block;
+    width:179px;
+    height:1px;
+    background:#fff;
+    margin-bottom:12px;
+}
+.header__content-text {
+    position: absolute;
+    margin-top: 560px;
+    margin-left:595px;
+    font-size: 16px;
+    font-weight: 400;
+    color:#ffffff;
+    width:730px;
+    text-align: center;
+    justify-content: center;
+}
+.season {
+    height:730px;
+}
+.season__present {
+    display:flex;
+}
+.season__present-inner {
+    width:1040px;
+    background-color: #000000;
+}
+.season__present-title {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size:36px;
+    color:#ffffff;
+    margin-left:390px;
+    margin-top: 105px;
+}
+.season__present-title::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:1px;
+    background-color: #ffffff;
+    margin-top:50px;
+    margin-left:70px;
+    margin-bottom:50px;
+}
+.season__items {
+    display:flex;
+    margin-left: 80px;
+}
+.season__item {
+    width:260px;
+    height:325px;
+    background-color: #191b1c;
+    margin-right:50px;
+    margin-bottom:163px;
+}
+.season__item:hover{
+    background-color: #ffffff;
+}
+.season__item-img {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.season__item-title {
+    padding-top:100px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+    font-size:18px;
+    color:#ffffff;
+}
+.season__item-price {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+    font-size:16px;
+    color:#ffffff;
+}
+.season__show {
+    position:relative;
+    height:730px;
+    width:880px;
+    background-image: url(../img/Rectangle\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+}
+.season__show-title {
+    height:730px;
+    background-color: rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size:36px;
+    color:#ffffff;
+    padding-left:250px;
+    padding-top:500px;
+}
+.season__show-title::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:1px;
+    background-color: #ffffff;
+    margin-top:50px;
+    margin-left:130px;
+    margin-bottom:50px;
+}
+.season__show-btn {
+    position: absolute;
+    margin-top:-100px;
+    margin-left:370px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    width:138px;
+    height:47px;
+    color:#ffffff;
+    font-size:18px;
+    font-weight:300;
+    text-transform:uppercase;
+}
+.season__show-btn:hover{
+    background-color: #ffffff;
+    color: #0f0f0f;
+}
+.collection-inner {
+    display:flex;
+}
+.collection__info {
+    width:1040px;
+    background-color:#000000;
+}
+.collection__info-title {
+    margin-left:365px;
+    margin-top:110px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size:36px;
+    color:#ffffff;
+}
+.collection__info-title::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:1px;
+    background-color: #ffffff;
+    margin-top:50px;
+    margin-left:130px;
+    margin-bottom:50px;
+}
+.collection__info-text {
+    margin-left:290px;
+    width:471px;
+    text-align:center;
+    font-size:14px;
+    color:#ffffff;
+    margin-bottom:60px;
+}
+.collection__info-btn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    width:311px;
+    height:47px;
+    color:#ffffff;
+    font-size:18px;
+    font-weight:300;
+    text-transform:uppercase;
+    margin-left:365px;
+}
+.collection__info-btn:hover{
+    background-color: #ffffff;
+    color: #0f0f0f;
+}
+.new-arrives{
+    height:1290px;
+    position:relative;
+    background-color: #000000;
+}
+.new-arrives__title {
+    position: absolute;
+    margin-left:740px;
+    margin-top:135px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size:36px;
+    color:#ffffff;
+}
+.new-arrives__title::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:1px;
+    background-color: #ffffff;
+    margin-top:50px;
+    margin-left:130px;
+    margin-bottom:50px;
+}
+.new-arrives__items {
+    padding-left:355px;
+    padding-top:290px;
+    display:grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-auto-rows: 450px;
+}
+.new-arrives__item {
+    margin-right:50px;
+    width:260px;
+    height:325px;
+    background-color: #191b1c;
+}
+.new-arrives__item:hover{
+    background-color:#ffffff;
+}
+.new-arrives__item-img {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.new-arrives__item-title {
+    padding-top:100px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+    font-size:18px;
+    color:#ffffff;
+}
+.new-arrives__item-price {
+    padding-top:20px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+    font-size:16px;
+    color:#ffffff;
+}
+.brands {
+    height:362px;
+    background-color:#0F0F0F;
+}
+.brands__title {
+    text-transform: uppercase;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size:36px;
+    color:#ffffff;
+    padding-left:820px;
+    padding-top:70px;
+}
+.brands__title::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:1px;
+    background-color: #ffffff;
+    margin-top:50px;
+    margin-left:90px;
+    margin-bottom:50px;
+}
+.brands__items {
+    display:flex;
+    padding-left:355px;
+}
+.brands__item {
+    margin-left:50px;
+}
+.footer__content {
+    background-image: url(../img/Rectangle\ 15\ \(1\).png);
+    height:400px;
+}
+.footer__content-inner{
+    height:400px;
+    background-color: rgba(0, 0, 0 , .85);
+    display:flex;
+}
+.footer__about-title {
+    font-family:'Playfair Display', sans-serif;
+    font-weight:400;
+    font-size:24px;
+    color:#ffffff;
+    text-transform: uppercase;
+    margin-left:355px;
+    padding-top:100px;
+    margin-bottom:50px;
+}
+.footer__about-text {
+    font-size:14px;
+    color:#ffffff;
+    width:350px;
+    margin-left:355px;
+    line-height: 150%;
+}
+
+.footer__categories-title {
+    margin-left:30px;
+    padding-top:100px;
+    font-family:'Playfair Display', sans-serif;
+    font-weight:400;
+    font-size:24px;
+    color:#ffffff;
+    text-transform: uppercase;
+    margin-bottom:50px;
+}
+.footer__categories-buttons {
+    margin-left:30px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 60px;
+}
+.footer__categories-btn {
+    height:41px;
+    color:gray;
+    background-color: #000000;
+    font-size:14;
+    text-transform: lowercase;
+    text-align: center;
+    margin-right:20px;
+    border:none;
+}
+.footer__categories-btn:hover{
+    background-color: #ffffff;
+}
+.btn-1 {
+    width:70px;
+}
+.btn-2 {
+    width:98px;
+}
+.btn-3 {
+    width:79px;
+}
+.btn-4 {
+    width:164px;
+}
+.btn-5 {
+    width:91px;
+}
+.footer__subrscribe {
+    padding-left: 90px;
+    padding-top:100px;
+
+}
+.footer__subscribe-title {
+    font-family:'Playfair Display', sans-serif;
+    font-weight:400;
+    font-size:24px;
+    color:#ffffff;
+    text-transform: uppercase;
+    margin-bottom:50px;
+}
+.footer__subscribe-text {
+    width:350px;
+    font-size:14px;
+    color:#ffffff;
+    margin-bottom:40px;
+}
+
+.footer__subscribe-input {
+    width:210px;
+    height:42px;
+    font-size:14px;
+    background-color: rgba(255, 255, 255, .45);
+    border:none;
+    padding-left:20px;
+    color:#000000;
+    line-height:150%;
+}
+.footer__subscribe-input:-moz-placeholder{
+    color:#000000;
+}
+.footer__subscribe-input::-webkit-input-placeholder{
+    color:#000000;
+}
+
+.footer__subscribe-btn {
+    width:140px;
+    height:42px;
+    background-color: #0f0f0f;
+    color:#ffffff;
+    text-transform:uppercase;
+    border:none;
+    font-size:14px;
+    line-height: 150%;
+    letter-spacing: 5%;
+}
+.footer__subscribe-btn:hover{
+    background-color: #ffffff;
+    color:#000000;
+}
+.footer__copy{
+    height:50px;
+    background-color: #0f0f0f;
+    padding-left:355px;
+    font-size:12px;
+    color:lightgray;
+    padding-top:20px;
+}
